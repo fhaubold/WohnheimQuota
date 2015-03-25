@@ -10,12 +10,29 @@ import Cocoa
 
 class ViewController: NSViewController {
     
+    var quotaData: QuotaData = QuotaData()
+    
     @IBOutlet var downloadProgress: NSProgressIndicator!
+    @IBOutlet var uploadProgress: NSProgressIndicator!
+    @IBOutlet var timeProgress: NSProgressIndicator!
+    @IBOutlet var downloadLabel: NSTextField!
+    @IBOutlet var uploadLabel: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let quotaData = QuotaData()
+        setData()
+    }
+    
+    func refreshData() {
+        quotaData.loadData()
+    }
+    
+    func setData() {
+        downloadLabel.stringValue = quotaData.download
         downloadProgress.doubleValue = quotaData.downPercents
+        uploadLabel.stringValue = quotaData.upload
+        uploadProgress.doubleValue = quotaData.upPercents
+        timeProgress.doubleValue = quotaData.timePercents
     }
 
     override var representedObject: AnyObject? {

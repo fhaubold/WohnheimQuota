@@ -14,8 +14,8 @@ class QuotaData {
     var download: String = ""
     var upload: String = ""
     var downPercents: Double = 0
-    var upPercents: Int = 0
-    var timePercents: Int = 0
+    var upPercents: Double = 0
+    var timePercents: Double = 0
     
     // constructor
     init() {
@@ -68,7 +68,7 @@ class QuotaData {
         }
         
         downPercents = (percents[0] as NSString).doubleValue
-        upPercents = (percents[1] as String).toInt()!
-        timePercents = (percents[2] as String).toInt()!
+        upPercents = (percents[1] as NSString).doubleValue
+        timePercents = (percents[2] as NSString).doubleValue
     }
 }

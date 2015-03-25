@@ -650,7 +650,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="WohnheimQuota" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -669,29 +669,123 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="WohnheimQuota" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="188"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bnS-mH-sfB">
-                                <rect key="frame" x="18" y="233" width="38" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="NbI-Sq-LSh">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bnS-mH-sfB">
+                                <rect key="frame" x="18" y="151" width="70" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Download:" id="NbI-Sq-LSh">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="OCx-nL-ceu">
+                                <rect key="frame" x="20" y="124" width="440" height="20"/>
+                            </progressIndicator>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ggK-ym-lKC">
+                                <rect key="frame" x="94" y="151" width="63" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="80P-5W-vsd"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="0" id="J5z-v3-SCk">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <progressIndicator fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="OCx-nL-ceu">
-                                <rect key="frame" x="20" y="206" width="440" height="20"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GOp-4i-Xub">
+                                <rect key="frame" x="161" y="151" width="63" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="/ 12.5GiB" id="jnm-Zs-wYN">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tLa-rr-nzK">
+                                <rect key="frame" x="18" y="100" width="53" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="93S-e4-rLJ"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Upload:" id="ZD8-aQ-2Fw">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="KHf-OJ-tkg">
+                                <rect key="frame" x="20" y="73" width="440" height="20"/>
                             </progressIndicator>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kyl-r5-rcK">
+                                <rect key="frame" x="94" y="100" width="63" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="0" id="Mdt-ua-6Tz">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DTL-bF-9SZ">
+                                <rect key="frame" x="18" y="49" width="63" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="EuT-gn-0Ly"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Zeitraum:" id="GOF-j9-Lec">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="jVl-3S-QEv">
+                                <rect key="frame" x="20" y="22" width="440" height="20"/>
+                            </progressIndicator>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WAT-LV-Tge">
+                                <rect key="frame" x="161" y="100" width="63" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="/ 12.5GiB" id="baO-bY-U0d">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="Kyl-r5-rcK" firstAttribute="baseline" secondItem="tLa-rr-nzK" secondAttribute="baseline" id="1LK-tW-LwG"/>
+                            <constraint firstItem="bnS-mH-sfB" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="1tB-jy-LDA"/>
+                            <constraint firstItem="WAT-LV-Tge" firstAttribute="leading" secondItem="Kyl-r5-rcK" secondAttribute="trailing" constant="8" symbolic="YES" id="6kk-3x-pkW"/>
+                            <constraint firstItem="ggK-ym-lKC" firstAttribute="leading" secondItem="bnS-mH-sfB" secondAttribute="trailing" constant="10" id="CVd-rb-LTc"/>
+                            <constraint firstItem="jVl-3S-QEv" firstAttribute="top" secondItem="DTL-bF-9SZ" secondAttribute="bottom" constant="8" symbolic="YES" id="EHJ-ft-V5l"/>
+                            <constraint firstItem="DTL-bF-9SZ" firstAttribute="top" secondItem="KHf-OJ-tkg" secondAttribute="bottom" constant="8" symbolic="YES" id="JmM-lP-D9R"/>
+                            <constraint firstItem="WAT-LV-Tge" firstAttribute="leading" secondItem="GOp-4i-Xub" secondAttribute="leading" id="LgE-Xq-6DG"/>
+                            <constraint firstItem="ggK-ym-lKC" firstAttribute="baseline" secondItem="GOp-4i-Xub" secondAttribute="baseline" id="MFJ-xr-nzd"/>
+                            <constraint firstItem="OCx-nL-ceu" firstAttribute="top" secondItem="bnS-mH-sfB" secondAttribute="bottom" constant="8" symbolic="YES" id="Mao-An-Lhf"/>
+                            <constraint firstItem="tLa-rr-nzK" firstAttribute="top" secondItem="OCx-nL-ceu" secondAttribute="bottom" constant="8" symbolic="YES" id="Uqv-d7-LDA"/>
+                            <constraint firstItem="KHf-OJ-tkg" firstAttribute="top" secondItem="tLa-rr-nzK" secondAttribute="bottom" constant="8" symbolic="YES" id="Z4R-kS-1PJ"/>
+                            <constraint firstItem="WAT-LV-Tge" firstAttribute="baseline" secondItem="Kyl-r5-rcK" secondAttribute="baseline" id="b9h-Lp-AXW"/>
+                            <constraint firstAttribute="trailing" secondItem="OCx-nL-ceu" secondAttribute="trailing" constant="20" symbolic="YES" id="dBD-XR-PjG"/>
+                            <constraint firstItem="DTL-bF-9SZ" firstAttribute="leading" secondItem="KHf-OJ-tkg" secondAttribute="leading" id="eAq-bw-12h"/>
+                            <constraint firstItem="GOp-4i-Xub" firstAttribute="leading" secondItem="ggK-ym-lKC" secondAttribute="trailing" constant="8" symbolic="YES" id="g8i-FS-AHV"/>
+                            <constraint firstItem="Kyl-r5-rcK" firstAttribute="leading" secondItem="tLa-rr-nzK" secondAttribute="trailing" constant="27" id="gCP-rl-5h0"/>
+                            <constraint firstItem="OCx-nL-ceu" firstAttribute="trailing" secondItem="KHf-OJ-tkg" secondAttribute="trailing" id="hcY-HR-s1R"/>
+                            <constraint firstItem="KHf-OJ-tkg" firstAttribute="trailing" secondItem="jVl-3S-QEv" secondAttribute="trailing" id="nc3-Er-Akc"/>
+                            <constraint firstItem="jVl-3S-QEv" firstAttribute="leading" secondItem="DTL-bF-9SZ" secondAttribute="leading" id="pGC-tt-46G"/>
+                            <constraint firstItem="ggK-ym-lKC" firstAttribute="leading" secondItem="Kyl-r5-rcK" secondAttribute="leading" id="ph9-v1-xPC"/>
+                            <constraint firstItem="OCx-nL-ceu" firstAttribute="leading" secondItem="bnS-mH-sfB" secondAttribute="leading" id="pv6-xO-ueg"/>
+                            <constraint firstItem="tLa-rr-nzK" firstAttribute="leading" secondItem="KHf-OJ-tkg" secondAttribute="leading" id="s8C-lO-Jpn"/>
+                            <constraint firstItem="tLa-rr-nzK" firstAttribute="leading" secondItem="OCx-nL-ceu" secondAttribute="leading" id="vo3-gm-891"/>
+                            <constraint firstItem="bnS-mH-sfB" firstAttribute="baseline" secondItem="ggK-ym-lKC" secondAttribute="baseline" id="xGD-F7-ack"/>
+                            <constraint firstItem="bnS-mH-sfB" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="xiw-Wf-Nci"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="downloadLabel" destination="ggK-ym-lKC" id="tca-FE-w0H"/>
                         <outlet property="downloadProgress" destination="OCx-nL-ceu" id="UYR-3l-84R"/>
+                        <outlet property="timeProgress" destination="jVl-3S-QEv" id="BPc-49-NE9"/>
+                        <outlet property="uploadLabel" destination="Kyl-r5-rcK" id="dti-Bt-fwa"/>
+                        <outlet property="uploadProgress" destination="KHf-OJ-tkg" id="T3g-cq-hqj"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="614"/>
         </scene>
     </scenes>
 </document>
