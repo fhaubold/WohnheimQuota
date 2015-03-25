@@ -669,11 +669,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="WohnheimQuota" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="188"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="227"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bnS-mH-sfB">
-                                <rect key="frame" x="18" y="151" width="70" height="17"/>
+                                <rect key="frame" x="18" y="190" width="70" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Download:" id="NbI-Sq-LSh">
                                     <font key="font" metaFont="systemBold"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -681,10 +681,10 @@
                                 </textFieldCell>
                             </textField>
                             <progressIndicator maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="OCx-nL-ceu">
-                                <rect key="frame" x="20" y="124" width="440" height="20"/>
+                                <rect key="frame" x="20" y="163" width="440" height="20"/>
                             </progressIndicator>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ggK-ym-lKC">
-                                <rect key="frame" x="94" y="151" width="63" height="17"/>
+                                <rect key="frame" x="94" y="190" width="63" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="80P-5W-vsd"/>
                                 </constraints>
@@ -695,7 +695,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GOp-4i-Xub">
-                                <rect key="frame" x="161" y="151" width="63" height="17"/>
+                                <rect key="frame" x="161" y="190" width="63" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="/ 12.5GiB" id="jnm-Zs-wYN">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -703,7 +703,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tLa-rr-nzK">
-                                <rect key="frame" x="18" y="100" width="53" height="17"/>
+                                <rect key="frame" x="18" y="139" width="53" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="93S-e4-rLJ"/>
                                 </constraints>
@@ -714,10 +714,10 @@
                                 </textFieldCell>
                             </textField>
                             <progressIndicator maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="KHf-OJ-tkg">
-                                <rect key="frame" x="20" y="73" width="440" height="20"/>
+                                <rect key="frame" x="20" y="112" width="440" height="20"/>
                             </progressIndicator>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kyl-r5-rcK">
-                                <rect key="frame" x="94" y="100" width="63" height="17"/>
+                                <rect key="frame" x="94" y="139" width="63" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="0" id="Mdt-ua-6Tz">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -725,7 +725,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DTL-bF-9SZ">
-                                <rect key="frame" x="18" y="49" width="63" height="17"/>
+                                <rect key="frame" x="18" y="88" width="63" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="EuT-gn-0Ly"/>
                                 </constraints>
@@ -736,16 +736,26 @@
                                 </textFieldCell>
                             </textField>
                             <progressIndicator maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="jVl-3S-QEv">
-                                <rect key="frame" x="20" y="22" width="440" height="20"/>
+                                <rect key="frame" x="20" y="61" width="440" height="20"/>
                             </progressIndicator>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WAT-LV-Tge">
-                                <rect key="frame" x="161" y="100" width="63" height="17"/>
+                                <rect key="frame" x="161" y="139" width="63" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="/ 12.5GiB" id="baO-bY-U0d">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQH-5M-SsS">
+                                <rect key="frame" x="14" y="13" width="130" height="32"/>
+                                <buttonCell key="cell" type="push" title="Aktualisieren" bezelStyle="rounded" image="NSRefreshTemplate" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="rwh-l6-psV">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressedRefreshButton:" target="XfG-lQ-9wD" id="UI0-PO-acX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Kyl-r5-rcK" firstAttribute="baseline" secondItem="tLa-rr-nzK" secondAttribute="baseline" id="1LK-tW-LwG"/>
@@ -785,7 +795,10 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="614"/>
+            <point key="canvasLocation" x="75" y="633.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSRefreshTemplate" width="11" height="15"/>
+    </resources>
 </document>

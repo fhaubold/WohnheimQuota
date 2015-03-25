@@ -35,6 +35,11 @@ class ViewController: NSViewController {
         timeProgress.doubleValue = quotaData.timePercents
     }
 
+    @IBAction func pressedRefreshButton(sender: AnyObject) {
+        refreshData()
+        setData()
+    }
+    
     override var representedObject: AnyObject? {
         didSet {
         // Update the view, if already loaded.
