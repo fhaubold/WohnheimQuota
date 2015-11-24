@@ -10,6 +10,7 @@ import Foundation
 
 class QuotaData {
     // Basic properties
+    var available: Bool = false
     let url = NSURL(string: "https://quota.wohnheim.uni-kl.de")
     var download: String = ""
     var upload: String = ""
@@ -19,56 +20,62 @@ class QuotaData {
     
     // constructor
     init() {
-        loadData()
+        available = loadData()
     }
     
     // function for loading data from Quota Website
-    func loadData() {
-        var html = NSString(contentsOfURL: url!, encoding: NSUTF8StringEncoding, error: nil)!
+    func loadData() -> Bool {
+        if var html = try? NSString(contentsOfURL: url!, encoding: NSUTF8StringEncoding) {
         
-        html = html.stringByReplacingOccurrencesOfString("<!--Wohnheime_incoming-->", withString: "")
-        html = html.stringByReplacingOccurrencesOfString("<!--Wohnheime_outgoing-->", withString: "")
-        html = html.stringByReplacingOccurrencesOfString(" <!--end-->", withString: "")
+            html = html.stringByReplacingOccurrencesOfString("<!--Wohnheime_incoming-->", withString: "")
+            html = html.stringByReplacingOccurrencesOfString("<!--Wohnheime_outgoing-->", withString: "")
+            html = html.stringByReplacingOccurrencesOfString(" <!--end-->", withString: "")
         
-        var err : NSError?
-        var parser = HTMLParser(html: html, error: &err)
-        if err != nil {
-            println(err)
-            exit(1)
-        }
+            var err : NSError?
+            let parser = HTMLParser(html: html as String, error: &err)
+            if err != nil {
+                print(err)
+                exit(1)
+            }
         
-        var bodyNode = parser.body
+            let bodyNode = parser.body
         
-        var results = NSMutableArray()
-        var percents = NSMutableArray()
+            let results = NSMutableArray()
+            let percents = NSMutableArray()
         
-        if let inputNodes = bodyNode?.findChildTags("td") {
-            for node in inputNodes {
-                results.addObject(node.contents)
-                if (node.getAttributeNamed("title") as NSString != "") {
-                    percents.addObject(node.getAttributeNamed("title"))
+            if let inputNodes = bodyNode?.findChildTags("td") {
+                for node in inputNodes {
+                    results.addObject(node.contents)
+                    if (node.getAttributeNamed("title") as NSString != "") {
+                        percents.addObject(node.getAttributeNamed("title"))
+                    }
                 }
             }
+        
+            let indexSet = NSMutableIndexSet()
+            for var j=0; j<6; j++ {
+                indexSet.addIndex(j)
+            }
+            indexSet.addIndex(7)
+            indexSet.addIndex(8)
+        
+            results.removeObjectsAtIndexes(indexSet)
+        
+            download = results[0] as! String
+            upload = results[1] as! String
+        
+            for percent in percents {
+                (percent as! String).stringByReplacingOccurrencesOfString("%", withString: "")
+            }
+        
+            downPercents = (percents[0] as! NSString).doubleValue
+            upPercents = (percents[1] as! NSString).doubleValue
+            timePercents = (percents[2] as! NSString).doubleValue
+            
+            return true
+            
+        } else {
+            return false
         }
-        
-        let indexSet = NSMutableIndexSet()
-        for var j=0; j<6; j++ {
-            indexSet.addIndex(j)
-        }
-        indexSet.addIndex(7)
-        indexSet.addIndex(8)
-        
-        results.removeObjectsAtIndexes(indexSet)
-        
-        download = results[0] as String
-        upload = results[1] as String
-        
-        for percent in percents {
-            (percent as String).stringByReplacingOccurrencesOfString("%", withString: "")
-        }
-        
-        downPercents = (percents[0] as NSString).doubleValue
-        upPercents = (percents[1] as NSString).doubleValue
-        timePercents = (percents[2] as NSString).doubleValue
     }
 }

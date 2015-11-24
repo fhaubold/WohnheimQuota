@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1737324C1C051445008379A0 /* QuotaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737324A1C051445008379A0 /* QuotaViewController.swift */; };
+		1737324D1C051445008379A0 /* QuotaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1737324B1C051445008379A0 /* QuotaViewController.xib */; };
+		173732501C0518B1008379A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1737324E1C0518B1008379A0 /* Main.storyboard */; };
+		173732521C0519A2008379A0 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173732511C0519A2008379A0 /* EventMonitor.swift */; };
 		176BF6701A5C8FA900257331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BF66F1A5C8FA900257331 /* AppDelegate.swift */; };
-		176BF6721A5C8FA900257331 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BF6711A5C8FA900257331 /* ViewController.swift */; };
 		176BF6741A5C8FA900257331 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176BF6731A5C8FA900257331 /* Images.xcassets */; };
-		176BF6771A5C8FA900257331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176BF6751A5C8FA900257331 /* Main.storyboard */; };
 		176BF6831A5C8FA900257331 /* WohnheimQuotaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BF6821A5C8FA900257331 /* WohnheimQuotaTests.swift */; };
 		176BF68F1A5C900D00257331 /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BF68C1A5C900D00257331 /* HTMLNode.swift */; };
 		176BF6901A5C900D00257331 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BF68D1A5C900D00257331 /* HTMLParser.swift */; };
@@ -29,12 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1737324A1C051445008379A0 /* QuotaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotaViewController.swift; sourceTree = "<group>"; };
+		1737324B1C051445008379A0 /* QuotaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotaViewController.xib; sourceTree = "<group>"; };
+		1737324F1C0518B1008379A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		173732511C0519A2008379A0 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		176BF66A1A5C8FA900257331 /* WohnheimQuota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WohnheimQuota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		176BF66E1A5C8FA900257331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		176BF66F1A5C8FA900257331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		176BF6711A5C8FA900257331 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		176BF6731A5C8FA900257331 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		176BF6761A5C8FA900257331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		176BF67C1A5C8FA900257331 /* WohnheimQuotaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WohnheimQuotaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		176BF6811A5C8FA900257331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		176BF6821A5C8FA900257331 /* WohnheimQuotaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WohnheimQuotaTests.swift; sourceTree = "<group>"; };
@@ -90,10 +94,12 @@
 				176BF68D1A5C900D00257331 /* HTMLParser.swift */,
 				176BF68E1A5C900D00257331 /* Swift-HTML-Parser-Bridging-Header.h */,
 				176BF66F1A5C8FA900257331 /* AppDelegate.swift */,
-				176BF6711A5C8FA900257331 /* ViewController.swift */,
 				178FEBC51AC34107002F12E5 /* QuotaData.swift */,
+				1737324E1C0518B1008379A0 /* Main.storyboard */,
 				176BF6731A5C8FA900257331 /* Images.xcassets */,
-				176BF6751A5C8FA900257331 /* Main.storyboard */,
+				1737324A1C051445008379A0 /* QuotaViewController.swift */,
+				1737324B1C051445008379A0 /* QuotaViewController.xib */,
+				173732511C0519A2008379A0 /* EventMonitor.swift */,
 				176BF66D1A5C8FA900257331 /* Supporting Files */,
 			);
 			path = WohnheimQuota;
@@ -168,7 +174,9 @@
 		176BF6621A5C8FA900257331 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Florian Haubold";
 				TargetAttributes = {
 					176BF6691A5C8FA900257331 = {
@@ -204,8 +212,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173732501C0518B1008379A0 /* Main.storyboard in Resources */,
 				176BF6741A5C8FA900257331 /* Images.xcassets in Resources */,
-				176BF6771A5C8FA900257331 /* Main.storyboard in Resources */,
+				1737324D1C051445008379A0 /* QuotaViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				176BF6721A5C8FA900257331 /* ViewController.swift in Sources */,
+				1737324C1C051445008379A0 /* QuotaViewController.swift in Sources */,
 				176BF6901A5C900D00257331 /* HTMLParser.swift in Sources */,
 				178FEBC61AC34107002F12E5 /* QuotaData.swift in Sources */,
+				173732521C0519A2008379A0 /* EventMonitor.swift in Sources */,
 				176BF6701A5C8FA900257331 /* AppDelegate.swift in Sources */,
 				176BF68F1A5C900D00257331 /* HTMLNode.swift in Sources */,
 			);
@@ -250,10 +260,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		176BF6751A5C8FA900257331 /* Main.storyboard */ = {
+		1737324E1C0518B1008379A0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				176BF6761A5C8FA900257331 /* Base */,
+				1737324F1C0518B1008379A0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -281,6 +291,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -299,7 +310,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Ounchecked";
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Debug;
 		};
@@ -335,7 +347,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Ounchecked";
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -351,6 +364,7 @@
 				);
 				INFOPLIST_FILE = WohnheimQuota/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianhaubold.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WohnheimQuota/Swift-HTML-Parser-Bridging-Header.h";
 			};
@@ -368,6 +382,7 @@
 				);
 				INFOPLIST_FILE = WohnheimQuota/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianhaubold.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WohnheimQuota/Swift-HTML-Parser-Bridging-Header.h";
 			};
@@ -388,6 +403,7 @@
 				);
 				INFOPLIST_FILE = WohnheimQuotaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianhaubold.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WohnheimQuota.app/Contents/MacOS/WohnheimQuota";
 			};
@@ -404,6 +420,7 @@
 				);
 				INFOPLIST_FILE = WohnheimQuotaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianhaubold.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WohnheimQuota.app/Contents/MacOS/WohnheimQuota";
 			};

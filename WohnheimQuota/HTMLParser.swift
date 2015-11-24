@@ -45,15 +45,15 @@ public class HTMLParser {
      */
     public init(html: String, inout error: NSError?) {
         if html.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0 {
-            var cfenc : CFStringEncoding = CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding)
-            var cfencstr : CFStringRef   = CFStringConvertEncodingToIANACharSetName(cfenc)
+            let cfenc : CFStringEncoding = CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding)
+            let cfencstr : CFStringRef   = CFStringConvertEncodingToIANACharSetName(cfenc)
         
-            var cur : [CChar]? = html.cStringUsingEncoding(NSUTF8StringEncoding)
-            var url : String = ""
-            var enc = CFStringGetCStringPtr(cfencstr, 0)
+            let cur : [CChar]? = html.cStringUsingEncoding(NSUTF8StringEncoding)
+            let url : String = ""
+            let enc = CFStringGetCStringPtr(cfencstr, 0)
             let optionHtml : CInt = 1
         
-            if var ucur = cur {
+            if let ucur = cur {
                 _doc = htmlReadDoc(UnsafePointer<CUnsignedChar>(ucur), url, enc, optionHtml)
                 rootNode  = HTMLNode(doc: _doc)
             } else {

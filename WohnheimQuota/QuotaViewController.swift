@@ -1,15 +1,15 @@
 //
-//  ViewController.swift
+//  QuotaViewController.swift
 //  WohnheimQuota
 //
-//  Created by Florian Haubold on 06.01.15.
-//  Copyright (c) 2015 Florian Haubold. All rights reserved.
+//  Created by Florian Haubold on 24.11.15.
+//  Copyright © 2015 Florian Haubold. All rights reserved.
 //
 
 import Cocoa
 
-class ViewController: NSViewController {
-    
+class QuotaViewController: NSViewController {
+
     var quotaData: QuotaData = QuotaData()
     
     @IBOutlet var downloadProgress: NSProgressIndicator!
@@ -17,14 +17,30 @@ class ViewController: NSViewController {
     @IBOutlet var timeProgress: NSProgressIndicator!
     @IBOutlet var downloadLabel: NSTextField!
     @IBOutlet var uploadLabel: NSTextField!
+    @IBOutlet var loadingIndicator: NSProgressIndicator!
+    @IBOutlet var errorLabel: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setData()
+        refreshData()
+    }
+    
+    override func viewDidAppear() {
     }
     
     func refreshData() {
-        quotaData.loadData()
+        loadingIndicator.hidden = false
+        loadingIndicator.startAnimation(self)
+        
+        if (quotaData.loadData()) {
+            setData()
+            errorLabel.stringValue = ""
+        } else {
+            errorLabel.stringValue = "Sorry, keine Verbindung!"
+        }
+        
+        loadingIndicator.stopAnimation(self)
+        loadingIndicator.hidden = true
     }
     
     func setData() {
@@ -34,18 +50,9 @@ class ViewController: NSViewController {
         uploadProgress.doubleValue = quotaData.upPercents
         timeProgress.doubleValue = quotaData.timePercents
     }
-
+    
     @IBAction func pressedRefreshButton(sender: AnyObject) {
         refreshData()
-        setData()
     }
     
-    override var representedObject: AnyObject? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
 }
-
