@@ -10,6 +10,7 @@
                 <outlet property="downloadProgress" destination="KC6-jQ-BPK" id="RQv-hL-os7"/>
                 <outlet property="errorLabel" destination="9fg-ul-NIq" id="FyJ-UV-iie"/>
                 <outlet property="loadingIndicator" destination="pcS-La-h7V" id="R43-6v-QcY"/>
+                <outlet property="refreshButton" destination="iDN-WH-OsR" id="00a-IJ-337"/>
                 <outlet property="timeProgress" destination="a0f-Eo-5Zw" id="Yre-eV-b6Q"/>
                 <outlet property="uploadLabel" destination="YHM-CW-ejh" id="oC7-ns-LZk"/>
                 <outlet property="uploadProgress" destination="6Nu-cr-Fe8" id="rMj-4q-mqt"/>
@@ -50,20 +51,6 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aOF-sf-cV6">
-                    <rect key="frame" x="14" y="13" width="130" height="32"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="118" id="iIo-3s-8lz"/>
-                    </constraints>
-                    <animations/>
-                    <buttonCell key="cell" type="push" title="Aktualisieren" bezelStyle="rounded" image="NSRefreshTemplate" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="lB9-if-742">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="pressedRefreshButton:" target="-2" id="mY9-Ni-4no"/>
-                    </connections>
-                </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YHM-CW-ejh">
                     <rect key="frame" x="94" y="139" width="63" height="17"/>
                     <animations/>
@@ -124,13 +111,35 @@
                     <animations/>
                 </progressIndicator>
                 <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="pcS-La-h7V">
-                    <rect key="frame" x="146" y="22" width="16" height="16"/>
+                    <rect key="frame" x="20" y="20" width="16" height="16"/>
                     <animations/>
                 </progressIndicator>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9fg-ul-NIq">
-                    <rect key="frame" x="173" y="20" width="289" height="17"/>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iDN-WH-OsR">
+                    <rect key="frame" x="20" y="20" width="16" height="16"/>
                     <animations/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" id="5Ai-ca-AhY">
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSRefreshTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="K4s-P9-rMd">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="pressedRefreshButton:" target="-2" id="Sxn-by-hz1"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2IV-BQ-Hgp">
+                    <rect key="frame" x="442" y="20" width="14" height="14"/>
+                    <animations/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSStopProgressTemplate" imagePosition="only" alignment="center" controlSize="small" imageScaling="proportionallyUpOrDown" inset="2" id="Yni-Ny-029">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="pressedQuitButton:" target="-2" id="cdn-gM-jyf"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9fg-ul-NIq">
+                    <rect key="frame" x="42" y="20" width="289" height="17"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="5Ai-ca-AhY">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -144,7 +153,6 @@
                 <constraint firstItem="KC6-jQ-BPK" firstAttribute="top" secondItem="Orn-sU-LBp" secondAttribute="bottom" constant="8" symbolic="YES" id="8mJ-l7-OJp"/>
                 <constraint firstItem="FD0-nh-GF8" firstAttribute="leading" secondItem="Orn-sU-LBp" secondAttribute="trailing" constant="10" id="8tE-59-csE"/>
                 <constraint firstItem="YHM-CW-ejh" firstAttribute="baseline" secondItem="8C9-P3-pbq" secondAttribute="baseline" id="9Ta-9V-XlU"/>
-                <constraint firstAttribute="bottom" secondItem="aOF-sf-cV6" secondAttribute="bottom" constant="20" symbolic="YES" id="Guz-L4-paB"/>
                 <constraint firstItem="FD0-nh-GF8" firstAttribute="leading" secondItem="YHM-CW-ejh" secondAttribute="leading" id="HHu-pk-KVX"/>
                 <constraint firstItem="ye2-HS-xW8" firstAttribute="baseline" secondItem="FD0-nh-GF8" secondAttribute="baseline" id="I16-AP-Srm"/>
                 <constraint firstAttribute="trailing" secondItem="KC6-jQ-BPK" secondAttribute="trailing" constant="20" symbolic="YES" id="JIK-Xh-r2d"/>
@@ -152,7 +160,6 @@
                 <constraint firstItem="ye2-HS-xW8" firstAttribute="leading" secondItem="8C9-P3-pbq" secondAttribute="leading" id="NSM-WH-RYj"/>
                 <constraint firstItem="ye2-HS-xW8" firstAttribute="leading" secondItem="FD0-nh-GF8" secondAttribute="trailing" constant="8" symbolic="YES" id="RLv-H2-fir"/>
                 <constraint firstItem="8C9-P3-pbq" firstAttribute="trailing" secondItem="ye2-HS-xW8" secondAttribute="trailing" id="TsK-Eo-Kih"/>
-                <constraint firstItem="aOF-sf-cV6" firstAttribute="leading" secondItem="a0f-Eo-5Zw" secondAttribute="leading" id="Wdj-PJ-UBA"/>
                 <constraint firstItem="qIi-Tn-zCw" firstAttribute="top" secondItem="KC6-jQ-BPK" secondAttribute="bottom" constant="8" symbolic="YES" id="XIJ-LM-If3"/>
                 <constraint firstItem="qIi-Tn-zCw" firstAttribute="leading" secondItem="KC6-jQ-BPK" secondAttribute="leading" id="YFX-WZ-8lK"/>
                 <constraint firstItem="a0f-Eo-5Zw" firstAttribute="trailing" secondItem="6Nu-cr-Fe8" secondAttribute="trailing" id="gSO-G6-fIb"/>
@@ -173,5 +180,6 @@
     </objects>
     <resources>
         <image name="NSRefreshTemplate" width="11" height="15"/>
+        <image name="NSStopProgressTemplate" width="11" height="11"/>
     </resources>
 </document>

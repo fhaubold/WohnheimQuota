@@ -19,28 +19,39 @@ class QuotaViewController: NSViewController {
     @IBOutlet var uploadLabel: NSTextField!
     @IBOutlet var loadingIndicator: NSProgressIndicator!
     @IBOutlet var errorLabel: NSTextField!
+    @IBOutlet var refreshButton: NSButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        refreshData()
     }
     
     override func viewDidAppear() {
+        refreshData()
     }
     
     func refreshData() {
         loadingIndicator.hidden = false
+        refreshButton.hidden = true
         loadingIndicator.startAnimation(self)
         
-        if (quotaData.loadData()) {
-            setData()
-            errorLabel.stringValue = ""
-        } else {
-            errorLabel.stringValue = "Sorry, keine Verbindung!"
+        let backgroundQueue = NSOperationQueue()
+        backgroundQueue.addOperationWithBlock {
+            
+            let success = self.quotaData.loadData()
+            
+            NSOperationQueue.mainQueue().addOperationWithBlock {
+                if (success){
+                    self.setData()
+                    self.errorLabel.stringValue = ""
+                } else {
+                    self.errorLabel.stringValue = "Sorry, keine Verbindung!"
+                }
+                
+                self.loadingIndicator.stopAnimation(self)
+                self.loadingIndicator.hidden = true
+                self.refreshButton.hidden = false;
+            }
         }
-        
-        loadingIndicator.stopAnimation(self)
-        loadingIndicator.hidden = true
     }
     
     func setData() {
@@ -55,4 +66,20 @@ class QuotaViewController: NSViewController {
         refreshData()
     }
     
+    @IBAction func pressedQuitButton(sender: AnyObject) {
+        let alert = NSAlert()
+        alert.messageText = "QuotaApp beenden?"
+        alert.addButtonWithTitle("Nein")
+        alert.addButtonWithTitle("Ja")
+        let result = alert.runModal()
+        switch(result) {
+        case NSAlertFirstButtonReturn:
+            break
+        case NSAlertSecondButtonReturn:
+            NSApplication.sharedApplication().terminate(sender)
+        default:
+            break
+        }
+        
+    }
 }
