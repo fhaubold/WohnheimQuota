@@ -10,7 +10,8 @@ import Cocoa
 
 class QuotaViewController: NSViewController {
 
-    var quotaData: QuotaData = QuotaData()
+    var quotaData: QuotaData!
+    var appDelegate: AppDelegate!
     
     @IBOutlet var downloadProgress: NSProgressIndicator!
     @IBOutlet var uploadProgress: NSProgressIndicator!
@@ -42,6 +43,7 @@ class QuotaViewController: NSViewController {
             NSOperationQueue.mainQueue().addOperationWithBlock {
                 if (success){
                     self.setData()
+                    self.appDelegate.setData()
                     self.errorLabel.stringValue = ""
                 } else {
                     self.errorLabel.stringValue = "Sorry, keine Verbindung!"

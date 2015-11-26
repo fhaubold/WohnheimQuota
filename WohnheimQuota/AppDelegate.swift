@@ -11,20 +11,26 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
+    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
     let popover = NSPopover()
     var eventMonitor: EventMonitor?
-
+    var quotaData: QuotaData = QuotaData()
 
     @IBOutlet weak var statusMenu: NSMenu!
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
+        refreshData()
+        
         if let button = statusItem.button {
-            button.image = NSImage(named: "QuotaIcon")
             button.action = Selector("togglePopover:")
         }
         
         popover.contentViewController = QuotaViewController(nibName: "QuotaViewController", bundle: nil)
+        let popoverViewController:QuotaViewController = popover.contentViewController as! QuotaViewController
+        popoverViewController.quotaData = quotaData
+        popoverViewController.appDelegate = self
+        
+        _ = NSTimer.scheduledTimerWithTimeInterval(900.0, target: self, selector: "refreshData", userInfo: nil, repeats: true)
         
         eventMonitor = EventMonitor(mask: [.LeftMouseDownMask, .RightMouseDownMask]) { [unowned self] event in
             if self.popover.shown {
@@ -56,6 +62,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
+    }
+    
+    func setData() {
+        if let button = statusItem.button {
+            button.title = "Q " + String(format:"%.0f", quotaData.downPercents) + "%"
+        }
+    }
+    
+    func refreshData() {
+        let backgroundQueue = NSOperationQueue()
+        backgroundQueue.addOperationWithBlock {
+            
+            let success = self.quotaData.loadData()
+            
+            NSOperationQueue.mainQueue().addOperationWithBlock {
+                if (success){
+                    self.setData()
+                }
+            }
+        }
+
     }
 
 
