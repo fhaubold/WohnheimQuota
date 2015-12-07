@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173289811C1602D900736F6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173289801C1602D900736F6F /* Images.xcassets */; };
 		1737324C1C051445008379A0 /* QuotaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737324A1C051445008379A0 /* QuotaViewController.swift */; };
 		1737324D1C051445008379A0 /* QuotaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1737324B1C051445008379A0 /* QuotaViewController.xib */; };
 		173732501C0518B1008379A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1737324E1C0518B1008379A0 /* Main.storyboard */; };
 		173732521C0519A2008379A0 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173732511C0519A2008379A0 /* EventMonitor.swift */; };
 		176BF6701A5C8FA900257331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BF66F1A5C8FA900257331 /* AppDelegate.swift */; };
-		176BF6741A5C8FA900257331 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176BF6731A5C8FA900257331 /* Images.xcassets */; };
 		176BF6831A5C8FA900257331 /* WohnheimQuotaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BF6821A5C8FA900257331 /* WohnheimQuotaTests.swift */; };
 		176BF68F1A5C900D00257331 /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BF68C1A5C900D00257331 /* HTMLNode.swift */; };
 		176BF6901A5C900D00257331 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BF68D1A5C900D00257331 /* HTMLParser.swift */; };
@@ -31,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		173289801C1602D900736F6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1737324A1C051445008379A0 /* QuotaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotaViewController.swift; sourceTree = "<group>"; };
 		1737324B1C051445008379A0 /* QuotaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotaViewController.xib; sourceTree = "<group>"; };
 		1737324F1C0518B1008379A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		176BF66A1A5C8FA900257331 /* WohnheimQuota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WohnheimQuota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		176BF66E1A5C8FA900257331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		176BF66F1A5C8FA900257331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		176BF6731A5C8FA900257331 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		176BF67C1A5C8FA900257331 /* WohnheimQuotaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WohnheimQuotaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		176BF6811A5C8FA900257331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		176BF6821A5C8FA900257331 /* WohnheimQuotaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WohnheimQuotaTests.swift; sourceTree = "<group>"; };
@@ -96,10 +96,10 @@
 				176BF66F1A5C8FA900257331 /* AppDelegate.swift */,
 				178FEBC51AC34107002F12E5 /* QuotaData.swift */,
 				1737324E1C0518B1008379A0 /* Main.storyboard */,
-				176BF6731A5C8FA900257331 /* Images.xcassets */,
 				1737324A1C051445008379A0 /* QuotaViewController.swift */,
 				1737324B1C051445008379A0 /* QuotaViewController.xib */,
 				173732511C0519A2008379A0 /* EventMonitor.swift */,
+				173289801C1602D900736F6F /* Images.xcassets */,
 				176BF66D1A5C8FA900257331 /* Supporting Files */,
 			);
 			path = WohnheimQuota;
@@ -212,8 +212,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173289811C1602D900736F6F /* Images.xcassets in Resources */,
 				173732501C0518B1008379A0 /* Main.storyboard in Resources */,
-				176BF6741A5C8FA900257331 /* Images.xcassets in Resources */,
 				1737324D1C051445008379A0 /* QuotaViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
