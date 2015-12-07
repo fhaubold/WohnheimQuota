@@ -23,6 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         if let button = statusItem.button {
             button.action = Selector("togglePopover:")
+            button.title = "Q "
         }
         
         popover.contentViewController = QuotaViewController(nibName: "QuotaViewController", bundle: nil)
@@ -64,9 +65,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
     
-    func setData() {
+    func setData(success: Bool) {
         if let button = statusItem.button {
-            button.title = "Q " + String(format:"%.0f", quotaData.downPercents) + "%"
+            if (success) {
+                button.title = "Q " + String(format:"%.0f", quotaData.downPercents) + "%"
+            } else {
+                button.title = "Q ?%"
+            }
         }
     }
     
@@ -77,9 +82,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let success = self.quotaData.loadData()
             
             NSOperationQueue.mainQueue().addOperationWithBlock {
-                if (success){
-                    self.setData()
-                }
+                self.setData(success)
             }
         }
 
