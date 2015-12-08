@@ -30,6 +30,7 @@ class QuotaViewController: NSViewController {
         refreshData()
     }
     
+    // Reloads data in background
     func refreshData() {
         loadingIndicator.hidden = false
         refreshButton.hidden = true
@@ -56,6 +57,7 @@ class QuotaViewController: NSViewController {
         }
     }
     
+    // Sets loaded data to view
     func setData() {
         downloadLabel.stringValue = quotaData.download
         downloadProgress.doubleValue = quotaData.downPercents
@@ -68,6 +70,19 @@ class QuotaViewController: NSViewController {
         refreshData()
     }
     
+    @IBAction func pressedInfoButton(sender: AnyObject) {
+        let alert = NSAlert()
+        alert.messageText = "Copyright by Florian Haubold 2015. No commercial use!"
+        alert.addButtonWithTitle("Ok")
+        let result = alert.runModal()
+        switch(result) {
+            case NSAlertFirstButtonReturn:
+                break
+            default:
+                break
+        }
+    }
+    
     @IBAction func pressedQuitButton(sender: AnyObject) {
         let alert = NSAlert()
         alert.messageText = "QuotaApp beenden?"
@@ -75,12 +90,12 @@ class QuotaViewController: NSViewController {
         alert.addButtonWithTitle("Ja")
         let result = alert.runModal()
         switch(result) {
-        case NSAlertFirstButtonReturn:
-            break
-        case NSAlertSecondButtonReturn:
-            NSApplication.sharedApplication().terminate(sender)
-        default:
-            break
+            case NSAlertFirstButtonReturn:
+                break
+            case NSAlertSecondButtonReturn:
+                NSApplication.sharedApplication().terminate(sender)
+            default:
+                break
         }
         
     }

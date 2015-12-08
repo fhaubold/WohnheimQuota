@@ -18,12 +18,12 @@ class QuotaData {
     var upPercents: Double = 0
     var timePercents: Double = 0
     
-    // constructor
+    // Constructor
     init() {
         available = loadData()
     }
     
-    // function for loading data from Quota Website
+    // Function for loading data from Quota Website and save them in properties
     func loadData() -> Bool {
         if var html = try? NSString(contentsOfURL: url!, encoding: NSUTF8StringEncoding) {
             
