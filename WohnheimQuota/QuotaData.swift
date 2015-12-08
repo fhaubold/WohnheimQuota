@@ -27,6 +27,10 @@ class QuotaData {
     func loadData() -> Bool {
         if var html = try? NSString(contentsOfURL: url!, encoding: NSUTF8StringEncoding) {
             
+            html = html.stringByReplacingOccurrencesOfString("<!--Wohnheime_incoming-->", withString: "")
+            html = html.stringByReplacingOccurrencesOfString("<!--Wohnheime_outgoing-->", withString: "")
+            html = html.stringByReplacingOccurrencesOfString(" <!--end-->", withString: "")
+            
             var err : NSError?
             let parser = HTMLParser(html: html as String, error: &err)
             if err != nil {
@@ -43,11 +47,6 @@ class QuotaData {
                     }
                 }
             }
-
-        
-            html = html.stringByReplacingOccurrencesOfString("<!--Wohnheime_incoming-->", withString: "")
-            html = html.stringByReplacingOccurrencesOfString("<!--Wohnheime_outgoing-->", withString: "")
-            html = html.stringByReplacingOccurrencesOfString(" <!--end-->", withString: "")
         
             let bodyNode = parser.body
         
