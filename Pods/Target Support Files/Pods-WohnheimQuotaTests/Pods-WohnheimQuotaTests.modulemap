@@ -1,0 +1,6 @@
+framework module Pods_WohnheimQuotaTests {
+  umbrella header "Pods-WohnheimQuotaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
