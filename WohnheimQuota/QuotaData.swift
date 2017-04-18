@@ -12,29 +12,12 @@ import Alamofire
 
 class QuotaData {
     // Basic properties
-    var available: Bool = false
     let url = URL(string: "https://quota.wohnheim.uni-kl.de")
     var download: String = ""
     var upload: String = ""
     var downPercents: Double = 0
     var upPercents: Double = 0
     var timePercents: Double = 0
-    
-    // Constructor
-    init() {
-        available = loadData()
-    }
-    
-    func loadData() -> Bool {
-//        scrapeUrl() { success in
-//            if success {
-//                return true
-//            } else {
-//                return false
-//            }
-//        }
-        return true
-    }
     
     func scrapeUrl(completion: @escaping (Bool) -> ()) {
         Alamofire.request(url!).responseString { response in
@@ -57,14 +40,11 @@ class QuotaData {
             for result in doc.xpath("//node()[preceding-sibling::comment()[. = 'Wohnheime_outgoing']][following-sibling::comment()[. = 'end']]") {
                 upload = result.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
             }
-            
-            // Search for nodes by CSS selector
             for percentage in doc.css("td[background^='bar']") {
                 let showString = percentage["width"]?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).replacingOccurrences(of: "%", with: "")
                 percents.add(showString!)
                 
             }
-            
             for percentage in doc.css("td[bgcolor^='#0000cc']") {
                 let showString = percentage["width"]?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).replacingOccurrences(of: "%", with: "")
                 percents.add(showString!)

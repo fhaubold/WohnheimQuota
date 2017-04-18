@@ -64,7 +64,6 @@ class QuotaViewController: NSViewController {
             self.refreshButton.isHidden = false;
     }
     
-    // Sets loaded data to view
     func setData() {
         downloadLabel.stringValue = quotaData.download
         downloadProgress.doubleValue = quotaData.downPercents

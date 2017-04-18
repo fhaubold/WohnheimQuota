@@ -78,7 +78,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func refreshData() {
         let backgroundQueue = OperationQueue()
         backgroundQueue.addOperation {
-            
             self.quotaData.scrapeUrl() { response in
                 if response {
                     self.setData(success: true)
