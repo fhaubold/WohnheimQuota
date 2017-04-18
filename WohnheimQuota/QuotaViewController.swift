@@ -28,33 +28,40 @@ class QuotaViewController: NSViewController {
     
     override func viewDidAppear() {
         refreshData()
+        NSApplication.shared().activate(ignoringOtherApps: true)
     }
     
     // Reloads data in background
     func refreshData() {
-        loadingIndicator.hidden = false
-        refreshButton.hidden = true
+        loadingIndicator.isHidden = false
+        refreshButton.isHidden = true
         loadingIndicator.startAnimation(self)
         
-        let backgroundQueue = NSOperationQueue()
-        backgroundQueue.addOperationWithBlock {
+        let backgroundQueue = OperationQueue()
+        backgroundQueue.addOperation {
             
-            let success = self.quotaData.loadData()
-            
-            NSOperationQueue.mainQueue().addOperationWithBlock {
-                if (success){
-                    self.setData()
-                    self.appDelegate.setData(success)
-                    self.errorLabel.stringValue = ""
+            self.quotaData.scrapeUrl() { response in
+                if response {
+                    self.updateUi(success: true)
                 } else {
-                    self.errorLabel.stringValue = "Sorry, keine Verbindung!"
+                    self.updateUi(success: false)
                 }
-                
-                self.loadingIndicator.stopAnimation(self)
-                self.loadingIndicator.hidden = true
-                self.refreshButton.hidden = false;
             }
         }
+    }
+    
+    func updateUi(success: Bool) {
+            if (success){
+                self.setData()
+                self.appDelegate.setData(success: success)
+                self.errorLabel.stringValue = ""
+            } else {
+                self.errorLabel.stringValue = "Sorry, keine Verbindung!"
+            }
+            
+            self.loadingIndicator.stopAnimation(self)
+            self.loadingIndicator.isHidden = true
+            self.refreshButton.isHidden = false;
     }
     
     // Sets loaded data to view
@@ -66,14 +73,14 @@ class QuotaViewController: NSViewController {
         timeProgress.doubleValue = quotaData.timePercents
     }
     
-    @IBAction func pressedRefreshButton(sender: AnyObject) {
+    @IBAction func pressedRefreshButton(_ sender: AnyObject) {
         refreshData()
     }
     
-    @IBAction func pressedInfoButton(sender: AnyObject) {
+    @IBAction func pressedInfoButton(_ sender: AnyObject) {
         let alert = NSAlert()
-        alert.messageText = "Copyright by Florian Haubold 2015. No commercial use!"
-        alert.addButtonWithTitle("Ok")
+        alert.messageText = "Copyright by Florian Haubold 2017. No commercial use!"
+        alert.addButton(withTitle: "Ok")
         let result = alert.runModal()
         switch(result) {
             case NSAlertFirstButtonReturn:
@@ -83,17 +90,17 @@ class QuotaViewController: NSViewController {
         }
     }
     
-    @IBAction func pressedQuitButton(sender: AnyObject) {
+    @IBAction func pressedQuitButton(_ sender: AnyObject) {
         let alert = NSAlert()
         alert.messageText = "QuotaApp beenden?"
-        alert.addButtonWithTitle("Nein")
-        alert.addButtonWithTitle("Ja")
+        alert.addButton(withTitle: "Nein")
+        alert.addButton(withTitle: "Ja")
         let result = alert.runModal()
         switch(result) {
             case NSAlertFirstButtonReturn:
                 break
             case NSAlertSecondButtonReturn:
-                NSApplication.sharedApplication().terminate(sender)
+                NSApplication.shared().terminate(sender)
             default:
                 break
         }

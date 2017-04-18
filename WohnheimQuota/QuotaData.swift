@@ -7,11 +7,13 @@
 //
 
 import Foundation
+import Kanna
+import Alamofire
 
 class QuotaData {
     // Basic properties
     var available: Bool = false
-    let url = NSURL(string: "https://quota.wohnheim.uni-kl.de")
+    let url = URL(string: "https://quota.wohnheim.uni-kl.de")
     var download: String = ""
     var upload: String = ""
     var downPercents: Double = 0
@@ -23,69 +25,54 @@ class QuotaData {
         available = loadData()
     }
     
-    // Function for loading data from Quota Website and save them in properties
     func loadData() -> Bool {
-        if var html = try? NSString(contentsOfURL: url!, encoding: NSUTF8StringEncoding) {
-            
-            html = html.stringByReplacingOccurrencesOfString("<!--Wohnheime_incoming-->", withString: "")
-            html = html.stringByReplacingOccurrencesOfString("<!--Wohnheime_outgoing-->", withString: "")
-            html = html.stringByReplacingOccurrencesOfString(" <!--end-->", withString: "")
-            
-            var err : NSError?
-            let parser = HTMLParser(html: html as String, error: &err)
-            if err != nil {
-                print(err)
-                exit(1)
+//        scrapeUrl() { success in
+//            if success {
+//                return true
+//            } else {
+//                return false
+//            }
+//        }
+        return true
+    }
+    
+    func scrapeUrl(completion: @escaping (Bool) -> ()) {
+        Alamofire.request(url!).responseString { response in
+            if let html = response.result.value {
+                self.parseHTML(html)
+                completion(true)
+            } else {
+                completion(false)
             }
-           
-            let headNode = parser.head
-            
-            if let titleNodes = headNode?.findChildTags("title") {
-                for node in titleNodes {
-                    if (node.contents == "403 Forbidden") {
-                        return false;
-                    }
-                }
-            }
-        
-            let bodyNode = parser.body
-        
-            let results = NSMutableArray()
-            let percents = NSMutableArray()
-        
-            if let inputNodes = bodyNode?.findChildTags("td") {
-                for node in inputNodes {
-                    results.addObject(node.contents)
-                    if (node.getAttributeNamed("title") as NSString != "") {
-                        percents.addObject(node.getAttributeNamed("title"))
-                    }
-                }
-            }
-        
-            let indexSet = NSMutableIndexSet()
-            for var j=0; j<6; j++ {
-                indexSet.addIndex(j)
-            }
-            indexSet.addIndex(7)
-            indexSet.addIndex(8)
-        
-            results.removeObjectsAtIndexes(indexSet)
-        
-            download = results[0] as! String
-            upload = results[1] as! String
-        
-            for percent in percents {
-                (percent as! String).stringByReplacingOccurrencesOfString("%", withString: "")
-            }
-        
-            downPercents = (percents[0] as! NSString).doubleValue
-            upPercents = (percents[1] as! NSString).doubleValue
-            timePercents = (percents[2] as! NSString).doubleValue
-            
-            return true
-            
-        } else {
-            return false
         }
     }
+    
+    func parseHTML(_ html: String) -> Void {
+        let percents = NSMutableArray()
+        if let doc = Kanna.HTML(html: html, encoding: String.Encoding.utf8) {
+            
+            for result in doc.xpath("//node()[preceding-sibling::comment()[. = 'Wohnheime_incoming']][following-sibling::comment()[. = 'end']]") {
+                download = result.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+            }
+            for result in doc.xpath("//node()[preceding-sibling::comment()[. = 'Wohnheime_outgoing']][following-sibling::comment()[. = 'end']]") {
+                upload = result.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+            }
+            
+            // Search for nodes by CSS selector
+            for percentage in doc.css("td[background^='bar']") {
+                let showString = percentage["width"]?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).replacingOccurrences(of: "%", with: "")
+                percents.add(showString!)
+                
+            }
+            
+            for percentage in doc.css("td[bgcolor^='#0000cc']") {
+                let showString = percentage["width"]?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).replacingOccurrences(of: "%", with: "")
+                percents.add(showString!)
+            }
+        }
+        downPercents = (percents[0] as! NSString).doubleValue
+        upPercents = (percents[1] as! NSString).doubleValue
+        timePercents = (percents[2] as! NSString).doubleValue
+    }
+    
 }

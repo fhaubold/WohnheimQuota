@@ -11,18 +11,18 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
+    let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     let popover = NSPopover()
     var eventMonitor: EventMonitor?
     var quotaData: QuotaData = QuotaData()
 
     @IBOutlet weak var statusMenu: NSMenu!
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
         refreshData()
         
         if let button = statusItem.button {
-            button.action = Selector("togglePopover:")
+            button.action = #selector(AppDelegate.togglePopover(_:))
             button.title = "Q "
         }
         
@@ -31,37 +31,37 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popoverViewController.quotaData = quotaData
         popoverViewController.appDelegate = self
         
-        _ = NSTimer.scheduledTimerWithTimeInterval(900.0, target: self, selector: "refreshData", userInfo: nil, repeats: true)
+        _ = Timer.scheduledTimer(timeInterval: 900.0, target: self, selector: #selector(AppDelegate.refreshData), userInfo: nil, repeats: true)
         
-        eventMonitor = EventMonitor(mask: [.LeftMouseDownMask, .RightMouseDownMask]) { [unowned self] event in
-            if self.popover.shown {
+        eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [unowned self] event in
+            if self.popover.isShown {
                 self.closePopover(event)
             }
         }
         eventMonitor?.start()
     }
     
-    func showPopover(sender: AnyObject?) {
+    func showPopover(_ sender: AnyObject?) {
         if let button = statusItem.button {
-            popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSRectEdge.MinY)
+            popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
         }
         eventMonitor?.start()
     }
     
-    func closePopover(sender: AnyObject?) {
+    func closePopover(_ sender: AnyObject?) {
         popover.performClose(sender)
         eventMonitor?.stop()
     }
     
-    func togglePopover(sender: AnyObject?) {
-        if popover.shown {
+    func togglePopover(_ sender: AnyObject?) {
+        if popover.isShown {
             closePopover(sender)
         } else {
             showPopover(sender)
         }
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
     
@@ -76,18 +76,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func refreshData() {
-        let backgroundQueue = NSOperationQueue()
-        backgroundQueue.addOperationWithBlock {
+        let backgroundQueue = OperationQueue()
+        backgroundQueue.addOperation {
             
-            let success = self.quotaData.loadData()
-            
-            NSOperationQueue.mainQueue().addOperationWithBlock {
-                self.setData(success)
+            self.quotaData.scrapeUrl() { response in
+                if response {
+                    self.setData(success: true)
+                } else {
+                    self.setData(success: false)
+                }
             }
         }
-
     }
-
-
 }
 
