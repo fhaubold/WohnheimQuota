@@ -1,1151 +1,589 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>173289801C1602D900736F6F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>173289811C1602D900736F6F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>173289801C1602D900736F6F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1737324A1C051445008379A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>QuotaViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1737324B1C051445008379A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>QuotaViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1737324C1C051445008379A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1737324A1C051445008379A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1737324D1C051445008379A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1737324B1C051445008379A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1737324E1C0518B1008379A0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1737324F1C0518B1008379A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1737324F1C0518B1008379A0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>173732501C0518B1008379A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1737324E1C0518B1008379A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>173732511C0519A2008379A0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>EventMonitor.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>173732521C0519A2008379A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>173732511C0519A2008379A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>176BF6611A5C8FA900257331</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>176BF66C1A5C8FA900257331</string>
-				<string>176BF67F1A5C8FA900257331</string>
-				<string>176BF66B1A5C8FA900257331</string>
-				<string>EF3FA3F95F1BFA02D71AE1A8</string>
-				<string>79ABFB4650BF92AB349FEAD4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>176BF6621A5C8FA900257331</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftMigration</key>
-				<string>0710</string>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0710</string>
-				<key>LastUpgradeCheck</key>
-				<string>0710</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Florian Haubold</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>176BF6691A5C8FA900257331</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-					</dict>
-					<key>176BF67B1A5C8FA900257331</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-						<key>TestTargetID</key>
-						<string>176BF6691A5C8FA900257331</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>176BF6651A5C8FA900257331</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>176BF6611A5C8FA900257331</string>
-			<key>productRefGroup</key>
-			<string>176BF66B1A5C8FA900257331</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>176BF6691A5C8FA900257331</string>
-				<string>176BF67B1A5C8FA900257331</string>
-			</array>
-		</dict>
-		<key>176BF6651A5C8FA900257331</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>176BF6841A5C8FA900257331</string>
-				<string>176BF6851A5C8FA900257331</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>176BF6661A5C8FA900257331</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1737324C1C051445008379A0</string>
-				<string>178FEBC61AC34107002F12E5</string>
-				<string>173732521C0519A2008379A0</string>
-				<string>176BF6701A5C8FA900257331</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>176BF6671A5C8FA900257331</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B6287EF241D30ADD980CDC11</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>176BF6681A5C8FA900257331</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>173289811C1602D900736F6F</string>
-				<string>173732501C0518B1008379A0</string>
-				<string>1737324D1C051445008379A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>176BF6691A5C8FA900257331</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>176BF6861A5C8FA900257331</string>
-			<key>buildPhases</key>
-			<array>
-				<string>64852678C3735A82DC1EC4B9</string>
-				<string>176BF6661A5C8FA900257331</string>
-				<string>176BF6671A5C8FA900257331</string>
-				<string>176BF6681A5C8FA900257331</string>
-				<string>B8FE3FFB61593903EE65E06E</string>
-				<string>9BF9B7D8839F308577319AB0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>WohnheimQuota</string>
-			<key>productName</key>
-			<string>WohnheimQuota</string>
-			<key>productReference</key>
-			<string>176BF66A1A5C8FA900257331</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>176BF66A1A5C8FA900257331</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>WohnheimQuota.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>176BF66B1A5C8FA900257331</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>176BF66A1A5C8FA900257331</string>
-				<string>176BF67C1A5C8FA900257331</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>176BF66C1A5C8FA900257331</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>176BF66F1A5C8FA900257331</string>
-				<string>178FEBC51AC34107002F12E5</string>
-				<string>1737324E1C0518B1008379A0</string>
-				<string>1737324A1C051445008379A0</string>
-				<string>1737324B1C051445008379A0</string>
-				<string>173732511C0519A2008379A0</string>
-				<string>173289801C1602D900736F6F</string>
-				<string>176BF66D1A5C8FA900257331</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>WohnheimQuota</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>176BF66D1A5C8FA900257331</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>176BF66E1A5C8FA900257331</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>176BF66E1A5C8FA900257331</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>176BF66F1A5C8FA900257331</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>176BF6701A5C8FA900257331</key>
-		<dict>
-			<key>fileRef</key>
-			<string>176BF66F1A5C8FA900257331</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>176BF6781A5C8FA900257331</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>176BF6831A5C8FA900257331</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>176BF6791A5C8FA900257331</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C0B9F028010855E3F256F316</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>176BF67A1A5C8FA900257331</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>176BF67B1A5C8FA900257331</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>176BF6891A5C8FA900257331</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7B0BBD427DF2601899FDF12C</string>
-				<string>176BF6781A5C8FA900257331</string>
-				<string>176BF6791A5C8FA900257331</string>
-				<string>176BF67A1A5C8FA900257331</string>
-				<string>88B02EDF194D7592BF51D2FE</string>
-				<string>F59337B0E09E7020DAC8C041</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>176BF67E1A5C8FA900257331</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>WohnheimQuotaTests</string>
-			<key>productName</key>
-			<string>WohnheimQuotaTests</string>
-			<key>productReference</key>
-			<string>176BF67C1A5C8FA900257331</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>176BF67C1A5C8FA900257331</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>WohnheimQuotaTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>176BF67D1A5C8FA900257331</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>176BF6621A5C8FA900257331</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>176BF6691A5C8FA900257331</string>
-			<key>remoteInfo</key>
-			<string>WohnheimQuota</string>
-		</dict>
-		<key>176BF67E1A5C8FA900257331</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>176BF6691A5C8FA900257331</string>
-			<key>targetProxy</key>
-			<string>176BF67D1A5C8FA900257331</string>
-		</dict>
-		<key>176BF67F1A5C8FA900257331</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>176BF6821A5C8FA900257331</string>
-				<string>176BF6801A5C8FA900257331</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>WohnheimQuotaTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>176BF6801A5C8FA900257331</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>176BF6811A5C8FA900257331</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>176BF6811A5C8FA900257331</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>176BF6821A5C8FA900257331</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>WohnheimQuotaTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>176BF6831A5C8FA900257331</key>
-		<dict>
-			<key>fileRef</key>
-			<string>176BF6821A5C8FA900257331</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>176BF6841A5C8FA900257331</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>-</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.10</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-				<key>SWIFT_DISABLE_SAFETY_CHECKS</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-O</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>176BF6851A5C8FA900257331</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>-</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.10</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-				<key>SWIFT_DISABLE_SAFETY_CHECKS</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-O</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>176BF6861A5C8FA900257331</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>176BF6871A5C8FA900257331</string>
-				<string>176BF6881A5C8FA900257331</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>176BF6871A5C8FA900257331</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3868FFA12C476751BC5535B1</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>HEADER_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include</string>
-					<string>/usr/include/libxml2</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>WohnheimQuota/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>florianhaubold.$(PRODUCT_NAME:rfc1034identifier)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>176BF6881A5C8FA900257331</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D588F4C5B52FFA7573AED9F4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>HEADER_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include</string>
-					<string>/usr/include/libxml2</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>WohnheimQuota/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>florianhaubold.$(PRODUCT_NAME:rfc1034identifier)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>176BF6891A5C8FA900257331</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>176BF68A1A5C8FA900257331</string>
-				<string>176BF68B1A5C8FA900257331</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>176BF68A1A5C8FA900257331</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>656F5A7710CBF6541CC84AC0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>WohnheimQuotaTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>florianhaubold.$(PRODUCT_NAME:rfc1034identifier)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/WohnheimQuota.app/Contents/MacOS/WohnheimQuota</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>176BF68B1A5C8FA900257331</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>23C90196BD947DDB302EA72B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>WohnheimQuotaTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>florianhaubold.$(PRODUCT_NAME:rfc1034identifier)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/WohnheimQuota.app/Contents/MacOS/WohnheimQuota</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>178FEBC51AC34107002F12E5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>QuotaData.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>178FEBC61AC34107002F12E5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>178FEBC51AC34107002F12E5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>23C90196BD947DDB302EA72B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WohnheimQuotaTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-WohnheimQuotaTests/Pods-WohnheimQuotaTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2CA43C2EED299F81CEBB57CE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_WohnheimQuotaTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3868FFA12C476751BC5535B1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WohnheimQuota.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-WohnheimQuota/Pods-WohnheimQuota.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>589A16498F4488338142BFE4</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_WohnheimQuota.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>64852678C3735A82DC1EC4B9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>656F5A7710CBF6541CC84AC0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WohnheimQuotaTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-WohnheimQuotaTests/Pods-WohnheimQuotaTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79ABFB4650BF92AB349FEAD4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>589A16498F4488338142BFE4</string>
-				<string>2CA43C2EED299F81CEBB57CE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7B0BBD427DF2601899FDF12C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>88B02EDF194D7592BF51D2FE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-WohnheimQuotaTests/Pods-WohnheimQuotaTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>9BF9B7D8839F308577319AB0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-WohnheimQuota/Pods-WohnheimQuota-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>B6287EF241D30ADD980CDC11</key>
-		<dict>
-			<key>fileRef</key>
-			<string>589A16498F4488338142BFE4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B8FE3FFB61593903EE65E06E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-WohnheimQuota/Pods-WohnheimQuota-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>C0B9F028010855E3F256F316</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2CA43C2EED299F81CEBB57CE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D588F4C5B52FFA7573AED9F4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WohnheimQuota.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-WohnheimQuota/Pods-WohnheimQuota.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EF3FA3F95F1BFA02D71AE1A8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3868FFA12C476751BC5535B1</string>
-				<string>D588F4C5B52FFA7573AED9F4</string>
-				<string>656F5A7710CBF6541CC84AC0</string>
-				<string>23C90196BD947DDB302EA72B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F59337B0E09E7020DAC8C041</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-WohnheimQuotaTests/Pods-WohnheimQuotaTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>176BF6621A5C8FA900257331</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		173289811C1602D900736F6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173289801C1602D900736F6F /* Images.xcassets */; };
+		1737324C1C051445008379A0 /* QuotaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737324A1C051445008379A0 /* QuotaViewController.swift */; };
+		1737324D1C051445008379A0 /* QuotaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1737324B1C051445008379A0 /* QuotaViewController.xib */; };
+		173732501C0518B1008379A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1737324E1C0518B1008379A0 /* Main.storyboard */; };
+		173732521C0519A2008379A0 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173732511C0519A2008379A0 /* EventMonitor.swift */; };
+		176BF6701A5C8FA900257331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BF66F1A5C8FA900257331 /* AppDelegate.swift */; };
+		176BF6831A5C8FA900257331 /* WohnheimQuotaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BF6821A5C8FA900257331 /* WohnheimQuotaTests.swift */; };
+		178FEBC61AC34107002F12E5 /* QuotaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178FEBC51AC34107002F12E5 /* QuotaData.swift */; };
+		B6287EF241D30ADD980CDC11 /* Pods_WohnheimQuota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589A16498F4488338142BFE4 /* Pods_WohnheimQuota.framework */; };
+		C0B9F028010855E3F256F316 /* Pods_WohnheimQuotaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA43C2EED299F81CEBB57CE /* Pods_WohnheimQuotaTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		176BF67D1A5C8FA900257331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 176BF6621A5C8FA900257331 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 176BF6691A5C8FA900257331;
+			remoteInfo = WohnheimQuota;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		173289801C1602D900736F6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1737324A1C051445008379A0 /* QuotaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotaViewController.swift; sourceTree = "<group>"; };
+		1737324B1C051445008379A0 /* QuotaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotaViewController.xib; sourceTree = "<group>"; };
+		1737324F1C0518B1008379A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		173732511C0519A2008379A0 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		176BF66A1A5C8FA900257331 /* WohnheimQuota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WohnheimQuota.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		176BF66E1A5C8FA900257331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176BF66F1A5C8FA900257331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		176BF67C1A5C8FA900257331 /* WohnheimQuotaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WohnheimQuotaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		176BF6811A5C8FA900257331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176BF6821A5C8FA900257331 /* WohnheimQuotaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WohnheimQuotaTests.swift; sourceTree = "<group>"; };
+		178FEBC51AC34107002F12E5 /* QuotaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotaData.swift; sourceTree = "<group>"; };
+		23C90196BD947DDB302EA72B /* Pods-WohnheimQuotaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WohnheimQuotaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WohnheimQuotaTests/Pods-WohnheimQuotaTests.release.xcconfig"; sourceTree = "<group>"; };
+		2CA43C2EED299F81CEBB57CE /* Pods_WohnheimQuotaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WohnheimQuotaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3868FFA12C476751BC5535B1 /* Pods-WohnheimQuota.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WohnheimQuota.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WohnheimQuota/Pods-WohnheimQuota.debug.xcconfig"; sourceTree = "<group>"; };
+		589A16498F4488338142BFE4 /* Pods_WohnheimQuota.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WohnheimQuota.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		656F5A7710CBF6541CC84AC0 /* Pods-WohnheimQuotaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WohnheimQuotaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WohnheimQuotaTests/Pods-WohnheimQuotaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D588F4C5B52FFA7573AED9F4 /* Pods-WohnheimQuota.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WohnheimQuota.release.xcconfig"; path = "Pods/Target Support Files/Pods-WohnheimQuota/Pods-WohnheimQuota.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		176BF6671A5C8FA900257331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6287EF241D30ADD980CDC11 /* Pods_WohnheimQuota.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176BF6791A5C8FA900257331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B9F028010855E3F256F316 /* Pods_WohnheimQuotaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		176BF6611A5C8FA900257331 = {
+			isa = PBXGroup;
+			children = (
+				176BF66C1A5C8FA900257331 /* WohnheimQuota */,
+				176BF67F1A5C8FA900257331 /* WohnheimQuotaTests */,
+				176BF66B1A5C8FA900257331 /* Products */,
+				EF3FA3F95F1BFA02D71AE1A8 /* Pods */,
+				79ABFB4650BF92AB349FEAD4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		176BF66B1A5C8FA900257331 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				176BF66A1A5C8FA900257331 /* WohnheimQuota.app */,
+				176BF67C1A5C8FA900257331 /* WohnheimQuotaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		176BF66C1A5C8FA900257331 /* WohnheimQuota */ = {
+			isa = PBXGroup;
+			children = (
+				176BF66F1A5C8FA900257331 /* AppDelegate.swift */,
+				178FEBC51AC34107002F12E5 /* QuotaData.swift */,
+				1737324E1C0518B1008379A0 /* Main.storyboard */,
+				1737324A1C051445008379A0 /* QuotaViewController.swift */,
+				1737324B1C051445008379A0 /* QuotaViewController.xib */,
+				173732511C0519A2008379A0 /* EventMonitor.swift */,
+				173289801C1602D900736F6F /* Images.xcassets */,
+				176BF66D1A5C8FA900257331 /* Supporting Files */,
+			);
+			path = WohnheimQuota;
+			sourceTree = "<group>";
+		};
+		176BF66D1A5C8FA900257331 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				176BF66E1A5C8FA900257331 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		176BF67F1A5C8FA900257331 /* WohnheimQuotaTests */ = {
+			isa = PBXGroup;
+			children = (
+				176BF6821A5C8FA900257331 /* WohnheimQuotaTests.swift */,
+				176BF6801A5C8FA900257331 /* Supporting Files */,
+			);
+			path = WohnheimQuotaTests;
+			sourceTree = "<group>";
+		};
+		176BF6801A5C8FA900257331 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				176BF6811A5C8FA900257331 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79ABFB4650BF92AB349FEAD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				589A16498F4488338142BFE4 /* Pods_WohnheimQuota.framework */,
+				2CA43C2EED299F81CEBB57CE /* Pods_WohnheimQuotaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF3FA3F95F1BFA02D71AE1A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3868FFA12C476751BC5535B1 /* Pods-WohnheimQuota.debug.xcconfig */,
+				D588F4C5B52FFA7573AED9F4 /* Pods-WohnheimQuota.release.xcconfig */,
+				656F5A7710CBF6541CC84AC0 /* Pods-WohnheimQuotaTests.debug.xcconfig */,
+				23C90196BD947DDB302EA72B /* Pods-WohnheimQuotaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		176BF6691A5C8FA900257331 /* WohnheimQuota */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 176BF6861A5C8FA900257331 /* Build configuration list for PBXNativeTarget "WohnheimQuota" */;
+			buildPhases = (
+				64852678C3735A82DC1EC4B9 /* [CP] Check Pods Manifest.lock */,
+				176BF6661A5C8FA900257331 /* Sources */,
+				176BF6671A5C8FA900257331 /* Frameworks */,
+				176BF6681A5C8FA900257331 /* Resources */,
+				B8FE3FFB61593903EE65E06E /* [CP] Embed Pods Frameworks */,
+				9BF9B7D8839F308577319AB0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WohnheimQuota;
+			productName = WohnheimQuota;
+			productReference = 176BF66A1A5C8FA900257331 /* WohnheimQuota.app */;
+			productType = "com.apple.product-type.application";
+		};
+		176BF67B1A5C8FA900257331 /* WohnheimQuotaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 176BF6891A5C8FA900257331 /* Build configuration list for PBXNativeTarget "WohnheimQuotaTests" */;
+			buildPhases = (
+				7B0BBD427DF2601899FDF12C /* [CP] Check Pods Manifest.lock */,
+				176BF6781A5C8FA900257331 /* Sources */,
+				176BF6791A5C8FA900257331 /* Frameworks */,
+				176BF67A1A5C8FA900257331 /* Resources */,
+				88B02EDF194D7592BF51D2FE /* [CP] Embed Pods Frameworks */,
+				F59337B0E09E7020DAC8C041 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				176BF67E1A5C8FA900257331 /* PBXTargetDependency */,
+			);
+			name = WohnheimQuotaTests;
+			productName = WohnheimQuotaTests;
+			productReference = 176BF67C1A5C8FA900257331 /* WohnheimQuotaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		176BF6621A5C8FA900257331 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Florian Haubold";
+				TargetAttributes = {
+					176BF6691A5C8FA900257331 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					176BF67B1A5C8FA900257331 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 176BF6691A5C8FA900257331;
+					};
+				};
+			};
+			buildConfigurationList = 176BF6651A5C8FA900257331 /* Build configuration list for PBXProject "WohnheimQuota" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 176BF6611A5C8FA900257331;
+			productRefGroup = 176BF66B1A5C8FA900257331 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				176BF6691A5C8FA900257331 /* WohnheimQuota */,
+				176BF67B1A5C8FA900257331 /* WohnheimQuotaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		176BF6681A5C8FA900257331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				173289811C1602D900736F6F /* Images.xcassets in Resources */,
+				173732501C0518B1008379A0 /* Main.storyboard in Resources */,
+				1737324D1C051445008379A0 /* QuotaViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176BF67A1A5C8FA900257331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64852678C3735A82DC1EC4B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B0BBD427DF2601899FDF12C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		88B02EDF194D7592BF51D2FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WohnheimQuotaTests/Pods-WohnheimQuotaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BF9B7D8839F308577319AB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WohnheimQuota/Pods-WohnheimQuota-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8FE3FFB61593903EE65E06E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WohnheimQuota/Pods-WohnheimQuota-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F59337B0E09E7020DAC8C041 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WohnheimQuotaTests/Pods-WohnheimQuotaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		176BF6661A5C8FA900257331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1737324C1C051445008379A0 /* QuotaViewController.swift in Sources */,
+				178FEBC61AC34107002F12E5 /* QuotaData.swift in Sources */,
+				173732521C0519A2008379A0 /* EventMonitor.swift in Sources */,
+				176BF6701A5C8FA900257331 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176BF6781A5C8FA900257331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176BF6831A5C8FA900257331 /* WohnheimQuotaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		176BF67E1A5C8FA900257331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 176BF6691A5C8FA900257331 /* WohnheimQuota */;
+			targetProxy = 176BF67D1A5C8FA900257331 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1737324E1C0518B1008379A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1737324F1C0518B1008379A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		176BF6841A5C8FA900257331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Debug;
+		};
+		176BF6851A5C8FA900257331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		176BF6871A5C8FA900257331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3868FFA12C476751BC5535B1 /* Pods-WohnheimQuota.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = WohnheimQuota/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianhaubold.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		176BF6881A5C8FA900257331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D588F4C5B52FFA7573AED9F4 /* Pods-WohnheimQuota.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = WohnheimQuota/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianhaubold.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		176BF68A1A5C8FA900257331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 656F5A7710CBF6541CC84AC0 /* Pods-WohnheimQuotaTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WohnheimQuotaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianhaubold.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WohnheimQuota.app/Contents/MacOS/WohnheimQuota";
+			};
+			name = Debug;
+		};
+		176BF68B1A5C8FA900257331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23C90196BD947DDB302EA72B /* Pods-WohnheimQuotaTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WohnheimQuotaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianhaubold.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WohnheimQuota.app/Contents/MacOS/WohnheimQuota";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		176BF6651A5C8FA900257331 /* Build configuration list for PBXProject "WohnheimQuota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176BF6841A5C8FA900257331 /* Debug */,
+				176BF6851A5C8FA900257331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		176BF6861A5C8FA900257331 /* Build configuration list for PBXNativeTarget "WohnheimQuota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176BF6871A5C8FA900257331 /* Debug */,
+				176BF6881A5C8FA900257331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		176BF6891A5C8FA900257331 /* Build configuration list for PBXNativeTarget "WohnheimQuotaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176BF68A1A5C8FA900257331 /* Debug */,
+				176BF68B1A5C8FA900257331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 176BF6621A5C8FA900257331 /* Project object */;
+}
